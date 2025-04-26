@@ -1,0 +1,22 @@
+{
+  "name": "ws",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@repo/prisma": "workspace:* ",
+    "@repo/typescript-config": "workspace:*"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@types/ws": "^8.18.1",
+    "websocket": "^1.0.35",
+    "ws": "^8.18.1"
+  }
+}
