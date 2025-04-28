@@ -1,13 +1,15 @@
+
 events {
     # Event directives...
 }
+
 http {
 	server {
         listen 80;
-        server_name staging-week-25-ws.piyushzingade.xyz;
+        server_name staging.week-25-ws.piyushzingade.xyz;
 
         location / {
-            proxy_pass http://localhost:8080;
+            proxy_pass http://localhost:3001;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection 'upgrade';
@@ -18,7 +20,7 @@ http {
 
     server {
         listen 80;
-        server_name staging-week-25-http.piyushzingade.xyz;
+        server_name staging.week-25-http.piyushzingade.xyz;
 
         location / {
             proxy_pass http://localhost:3002;
@@ -32,7 +34,7 @@ http {
 
     server {
         listen 80;
-        server_name staging-week-25-fe.piyushzingade.xyz;
+        server_name staging.week-25-fe.piyushzingade.xyz;
 
         location / {
             proxy_pass http://localhost:3000;
